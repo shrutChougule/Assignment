@@ -30,7 +30,7 @@ public class SendEmailDynamicXpath {
 		String parent=driver.getWindowHandle();
 
 		// Login to gmail account
-		driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("008arronsmith@gmail.com");
+		driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("abc@gmail.com");
 		
 		driver.findElement(By.xpath("//span[@class='VfPpkd-vQzf8d']")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -72,7 +72,7 @@ public class SendEmailDynamicXpath {
 				clickOn(driver, compose, 20);
 				
 		        //write the  recipient ID , Subject and  mail body
-				driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("008lolasmith@gmail.com");
+				driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("xyz@gmail.com");
 				driver.findElement(By.xpath("//input[@name='subjectbox']")).sendKeys("Selenium Attachment");
 				driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys("Please find attachment."); // type mail
 
